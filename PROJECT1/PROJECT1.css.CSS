@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #1098ad;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#copyright {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related-list1 {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #1098ad;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border: 5px solid #1098ad;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1098ad;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+/* Styling Links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Flexbox Layout for Header */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flexbox Layout for Article and Aside */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+article {
+  flex: 3;
+  margin-right: 20px;
+}
+
+aside {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
