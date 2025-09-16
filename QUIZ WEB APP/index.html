@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/cssForLogin.css" />
+    <title>Quiz App - Home</title>
+  </head>
+  <body>
+    <div class="container intro-container">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="quiz.html" id="quiz-link">Quiz</a>
+        <a href="results.html">Results</a>
+      </nav>
+      <!-- Login Button -->
+      <button id="login-btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+      <!-- Logout Button -->
+      <button id="logout-btn" style="display: none">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+
+      <!-- Introduction Section -->
+      <div class="header">
+        <h1 class="heading2">Welcome to the Ultimate Quiz Mania!</h1>
+        <p class="subheading">
+          Test your knowledge across various categories and challenge yourself.
+        </p>
+      </div>
+
+      <!-- Category Selection -->
+      <div class="categories">
+        <div class="category-box" data-category="9" onclick="selectCategory(9)">
+          <i class="fas fa-globe"></i>
+          <p>General Knowledge</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="10"
+          onclick="selectCategory(10)"
+        >
+          <i class="fas fa-book"></i>
+          <p>Books</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="11"
+          onclick="selectCategory(11)"
+        >
+          <i class="fas fa-film"></i>
+          <p>Films</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="12"
+          onclick="selectCategory(12)"
+        >
+          <i class="fas fa-music"></i>
+          <p>Music</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="14"
+          onclick="selectCategory(14)"
+        >
+          <i class="fas fa-tv"></i>
+          <p>Television</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="15"
+          onclick="selectCategory(15)"
+        >
+          <i class="fas fa-gamepad"></i>
+          <p>Video Games</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="16"
+          onclick="selectCategory(16)"
+        >
+          <i class="fas fa-chess"></i>
+          <p>Board Games</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="17"
+          onclick="selectCategory(17)"
+        >
+          <i class="fas fa-atom"></i>
+          <p>Science & Nature</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="18"
+          onclick="selectCategory(18)"
+        >
+          <i class="fas fa-laptop-code"></i>
+          <p>Computers</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="19"
+          onclick="selectCategory(19)"
+        >
+          <i class="fas fa-square-root-alt"></i>
+          <p>Mathematics</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="20"
+          onclick="selectCategory(20)"
+        >
+          <i class="fas fa-dragon"></i>
+          <p>Mythology</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="21"
+          onclick="selectCategory(21)"
+        >
+          <i class="fas fa-football-ball"></i>
+          <p>Sports</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="22"
+          onclick="selectCategory(22)"
+        >
+          <i class="fas fa-globe-americas"></i>
+          <p>Geography</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="23"
+          onclick="selectCategory(23)"
+        >
+          <i class="fas fa-landmark"></i>
+          <p>History</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="24"
+          onclick="selectCategory(24)"
+        >
+          <i class="fas fa-balance-scale"></i>
+          <p>Politics</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="25"
+          onclick="selectCategory(25)"
+        >
+          <i class="fas fa-palette"></i>
+          <p>Art</p>
+        </div>
+        <div
+          class="category-box"
+          data-category="28"
+          onclick="selectCategory(28)"
+        >
+          <i class="fas fa-car"></i>
+          <p>Vehicles</p>
+        </div>
+
+        <div
+          class="category-box"
+          data-category="29"
+          onclick="selectCategory(29)"
+        >
+          <i class="fas fa-university"></i>
+          <p>UPSC</p>
+        </div>
+      </div>
+      <button class="start-journey" onclick="startJourney()">
+        Start Journey
+      </button>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2024 Quiz Mania. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script>
+      // Function to handle category selection
+      function selectCategory(category) {
+        const token = localStorage.getItem("token");
+        if (!token) {
+          alert("You must log in to select a category.");
+          window.location.href = "/login.html";
+          return;
+        }
+        localStorage.setItem("category", category); // Save the selected category to localStorage
+        window.location.href = "quiz.html"; // Redirect to quiz page
+      }
+
+      // Function to automatically start the quiz with a default category
+      function startJourney() {
+        const token = localStorage.getItem("token");
+        if (!token) {
+          alert("Please log in to start your quiz journey.");
+          window.location.href = "/login/login.html";
+          return;
+        }
+        const defaultCategory = 10; // Set the default category (Books in this case)
+        localStorage.setItem("category", defaultCategory); // Save to localStorage
+        window.location.href = "quiz.html"; // Redirect to quiz page
+      }
+
+      // Restrict direct access to the Quiz link in the navbar
+      document
+        .getElementById("quiz-link")
+        .addEventListener("click", (event) => {
+          const token = localStorage.getItem("token");
+          if (!token) {
+            event.preventDefault();
+            alert("You need to log in before accessing the quiz.");
+            window.location.href = "/login/login.html";
+          }
+        });
+    </script>
+
+    <script src="js/jsforlogin.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>

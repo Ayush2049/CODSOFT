@@ -1,0 +1,46 @@
+open the last quizupdate folder
+so there will be no sub folder named quizupdate folder inside main quizupdate folder
+
+
+---COMMAND FOR CHECKING THE CONNECTION OF MONGODB THROUGH "SERVER.JS"
+node server.js
+
+---COMMAND FOR CHECKING IF THERE IS ANOTHER PROCESS RUNNING ON PORT 5000
+netstat -ano | findstr :5000
+
+---how to add server into frontend
+step1:connect localhost 27017 and check on node js
+if still no connected go to step 2
+
+step2:open cmd with administrator
+check what process are running on port 5000
+netstat -ano | findstr :5000
+if there are processes then go to step 3
+
+step3: kill those process
+taskkill /PID <PID> /F
+
+step4: check again now the problem should be solved
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+final steps to connect to server
+
+run 
+pm2 stop server
+and then 
+Check Existing Processes:
+
+Before running pm2 start, check the list of running processes:
+
+pm2 list
+If you see a process already running for server.js, use pm2 restart server instead.
+
+
+pm2 start server.js --name server
+       or 
+pm2 restart server
+
+------------------------------------------------------------------------------------------------------------

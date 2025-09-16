@@ -1,0 +1,961 @@
+/* css/style.css */
+
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #dddfeb;
+  width: 100vw;
+}
+
+/* Container Styling */
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  background: #41475b;
+  padding: 40px;
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Color Schemes for Different Pages */
+.container.home {
+  background: #f0f4f8; /* Light background for Introduction */
+  color: #333;
+  width: 100%;
+}
+
+.container.results {
+  background: #1f2847; /* Dark background for Results */
+  color: #fff;
+}
+
+/* Header and Footer */
+.header,
+.footer {
+  text-align: center;
+}
+
+.header .heading,
+.end-screen .heading {
+  color: inherit;
+}
+
+.footer p {
+  color: #a2aace;
+  font-size: 0.875rem;
+}
+
+/* Introduction Page Subheading */
+.subheading {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Start Section */
+.start-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Category Boxes */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Min size 150px */
+}
+
+.category-box {
+  background: #1bbfe9; /* Base color */
+  border: 2px solid #0c80ef;
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff; /* White text */
+  position: relative;
+
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.5s ease, background-color 0.5s ease, color 0.3s ease,
+    box-shadow 0.5s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.category-box:hover {
+  transform: scale(1.05); /* Enlarge on hover */
+  background-color: #0a74a3; /* Darker blue on hover */
+  box-shadow: 0 8px 20px rgba(10, 116, 163, 0.8),
+    0 0 15px 5px rgba(255, 221, 87, 0.5); /* Gradient-like shadow */
+}
+
+.category-box i {
+  font-size: 2em;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.category-box:hover i {
+  color: #ffdd57; /* Icon color on hover */
+}
+
+.category-box p {
+  font-weight: 600;
+  margin-top: 8px;
+  color: #ffffff;
+}
+
+.category-box:hover p {
+  color: #ffdd57; /* Text color change on hover */
+}
+
+.category-box.selected {
+  border: 2px solid #4caf50;
+  background-color: #e8f5e9;
+}
+
+/* Start Journey Button */
+.start-journey {
+  display: inline-block;
+  padding: 15px 30px; /* Larger padding */
+  background: radial-gradient(
+    circle,
+    rgba(109, 125, 200, 1) 39%,
+    rgba(61, 129, 191, 1) 56%,
+    rgba(155, 233, 148, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px; /* Larger font */
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.start-journey:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Add shadow effect on hover */
+}
+
+/* Label and Select Styling */
+label {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.625rem;
+  color: #fff;
+}
+
+.container.quiz label {
+  color: #fff;
+}
+
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 0.3125rem;
+  margin-bottom: 1.25rem;
+  background: #fff;
+  color: #1f2847;
+  font-size: 0.875rem;
+}
+
+/* Button Styling */
+.btn {
+  width: 100%;
+  height: 60px;
+  background: #0c80ef;
+  border: none;
+  border-radius: 0.625rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s linear;
+}
+
+.btn:hover {
+  background: #0a6bc5;
+}
+
+.btn:disabled {
+  background: #576081;
+  cursor: not-allowed;
+}
+
+.btn.next {
+  display: none;
+}
+
+/* Timer Styling */
+.timer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1.875rem;
+}
+
+.timer .progress {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 0.625rem;
+  border: 3px solid #3f4868;
+}
+
+.timer .progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  background: linear-gradient(to right, #ea517c, #b478f1);
+  transition: width 1s linear;
+}
+
+.timer .progress .progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Question Styling */
+.question-wrapper .number {
+  color: #a2aace;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.question-wrapper .number .total {
+  color: #576081;
+  font-size: 1.125rem;
+}
+
+.question-wrapper .question {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+/* Answer Styling */
+.answer-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.answer-wrapper .answer {
+  width: 100%;
+  height: 60px;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  color: #fff;
+  border: 3px solid #3f4868;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  transition: background 0.3s linear, border-color 0.3s linear;
+}
+
+.answer-wrapper .answer:hover:not(.checked) .checkbox,
+.answer-wrapper .answer.selected .checkbox {
+  background-color: #0c80ef;
+  border-color: #0c80ef;
+}
+
+.answer-wrapper .answer.selected .checkbox i {
+  opacity: 1;
+}
+
+.answer-wrapper .answer.correct {
+  border-color: #0cef2a;
+}
+
+.answer-wrapper .answer.wrong {
+  border-color: #fc3939;
+}
+
+.answer-wrapper .answer .checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #3f4868;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.answer-wrapper .answer .checkbox i {
+  color: #fff;
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Question and Answer Wrapper Margins */
+.question-wrapper,
+.answer-wrapper {
+  margin-bottom: 3.125rem;
+}
+
+/* End Screen Styling */
+.end-screen .score {
+  color: #fff;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  margin-top: -75px;
+  margin-bottom: 1rem;
+
+  text-align: center;
+}
+
+.end-screen .score {
+  color: #fff;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  text-align: center;
+}
+
+.end-screen .score .score-text {
+  color: #a2aace;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 7.5rem; /* Adjusted margin */
+}
+
+/* Additional Content Styling on Results Page */
+.additional-content {
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.additional-content h2,
+.additional-content h3 {
+  margin-bottom: 1rem;
+}
+
+.additional-content p,
+.additional-content ul {
+  margin-bottom: 1.5rem;
+}
+
+.additional-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.social-media a {
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+/* Hide Class */
+.hide {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 0.875rem;
+  }
+
+  .question-wrapper .number {
+    font-size: 1.25rem;
+  }
+
+  .question-wrapper .question {
+    font-size: 1.125rem;
+  }
+
+  .answer-wrapper .answer {
+    height: 50px;
+    padding: 1rem;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .end-screen .score {
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+  }
+
+  .end-screen .score .score-text {
+    font-size: 0.875rem;
+    margin-bottom: 6rem;
+  }
+
+  .additional-content {
+    margin-top: 2rem;
+  }
+
+  .additional-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .additional-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 468px) {
+  .container {
+    min-height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .subheading {
+    font-size: 0.75rem;
+  }
+
+  .question-wrapper .number {
+    font-size: 1.125rem;
+  }
+
+  .question-wrapper .question {
+    font-size: 1rem;
+  }
+
+  .answer-wrapper .answer {
+    height: 45px;
+    padding: 0.875rem;
+  }
+
+  .btn {
+    height: 45px;
+    font-size: 0.875rem;
+  }
+
+  .end-screen .score {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .end-screen .score .score-text {
+    font-size: 0.75rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .additional-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .additional-content h3 {
+    font-size: 1rem;
+  }
+}
+.intro-container {
+  background-color: #f0f4f8; /* Light background */
+  color: #1f2847; /* Dark text */
+}
+
+/* Specific Styling for Results Page */
+.results-container {
+  background-color: #2e3b55; /* Darker background */
+
+  color: #fff; /* Light text */
+}
+.navbar {
+  width: 100%; /* Full width */
+  background-color: #0c80ef; /* Vibrant blue background */
+  background-image: linear-gradient(
+    120deg,
+    #f6d365 0%,
+    #fda085 100%
+  ); /* Corrected linear gradient */
+  display: flex;
+  justify-content: space-around; /* Evenly spaced nav items */
+  padding: 20px 0; /* Increase the size of the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for pop-out effect */
+  /* Remove position: sticky and top properties to allow scrolling */
+  position: relative; /* Or you can remove the position property entirely */
+  z-index: 1000; /* Ensure navbar stays on top of other content if needed */
+}
+
+.navbar a {
+  color: #fff; /* White text color for contrast */
+  font-size: 1.25rem; /* Increase font size */
+  text-decoration: none; /* Remove underlines */
+  padding: 10px 20px; /* Add some padding to make links bigger */
+  font-weight: 600; /* Make the text bold */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar a:hover {
+  background-color: #0a6bc5; /* Darker blue on hover */
+  color: #ffdd57; /* Bright color change on hover */
+  border-radius: 5px; /* Add some rounded corners to links on hover */
+}
+
+/* Responsive Navbar Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack the links vertically on smaller screens */
+    padding: 15px 0; /* Adjust padding for mobile */
+  }
+
+  .navbar a {
+    font-size: 1.1rem; /* Slightly smaller font size on smaller screens */
+    padding: 10px 15px;
+  }
+}
+
+/* Add a glowing border animation */
+.heading1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: #00bcd4;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative; /* To position the animation relative to the text */
+}
+
+.heading1 span {
+  position: relative;
+  color: #00bcd4; /* Vibrant Cyan */
+  background-color: rgba(0, 188, 212, 0.2);
+  padding: 5px;
+  z-index: 1; /*  span text appears above animation */
+}
+
+/*  glowing animation only around the text */
+.heading1 span::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 5px;
+  border: 2px solid #0c80ef;
+  opacity: 0.8;
+  animation: glow 2s infinite alternate;
+  z-index: -1; /* Places the glow behind the text */
+}
+
+/* Keyframes for glowing effect */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #b12f2f, 0 0 20px #ef0cd4, 0 0 30px #0c80ef;
+    opacity: 1;
+  }
+  to {
+    box-shadow: 0 0 20px #7fb324, 0 0 40px #0c80ef, 0 0 60px#4181ba;
+    opacity: 0.5;
+  }
+}
+
+/* Adjusted Quiz Section Heading */
+.quiz .question-wrapper {
+  margin-top: 20px; /* Moves the question section further down */
+}
+
+.quiz .timer {
+  margin-top: 10px; /*  Adds a bit more space between heading and timer */
+}
+.quiz {
+  margin-top: 2rem; /* Moves the quiz section further down */
+}
+.quiz {
+  margin-top: -20px; /* Move the section up by 20px */
+}
+/* Style for the Header */
+.header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Centering and Styling for the Header */
+.header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Heading Styling */
+.heading2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0c80ef;
+  position: relative;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+/* Span for styling inside the heading */
+.heading2 span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Line Animation around the border */
+.heading2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #0c80ef;
+  box-sizing: border-box;
+  animation: lineTraverse 4s linear infinite;
+}
+
+/* Keyframes for Border Traversing Animation */
+@keyframes lineTraverse {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  25% {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.heading3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b0bf92;
+  position: relative;
+  overflow: hidden;
+}
+
+.heading3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: lightSweep 2s ease-in-out infinite;
+}
+
+@keyframes lightSweep {
+  0% {
+    left: -100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent
+    );
+  }
+  50% {
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(0, 255, 255, 0.6),
+      /* Change this to the desired color */ transparent
+    );
+  }
+  100% {
+    left: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent
+    );
+  }
+}
+
+/* Leaderboard container styling */
+.leaderboard-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Leaderboard heading styling */
+.leaderboard-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Leaderboard entry styling */
+.leaderboard-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between username/medal and score */
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Username styling to align it to the left */
+.username {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* Medal styling, placed next to the username */
+.medal {
+  font-size: 1.5rem;
+  color: gold; /* Customize the color for different medals */
+  margin-left: 8px; /* Space between name and medal */
+}
+
+/* Score styling to align it to the right */
+.leaderboard-score {
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+}
+
+/* Add hover effect */
+.leaderboard-entry:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.leaderboard-entry:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.leaderboard-entry:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+/* Style for the bird animation wrapper */
+#resultAnimationWrapper {
+  position: relative; /* Establish positioning context */
+  height: 150px; /* Set a fixed height for the animation wrapper */
+  margin-top: 10px; /* Adjust as needed */
+  margin-bottom: 5px; /* Adjust as needed */
+  text-align: center; /* Center the animation */
+  overflow: hidden; /* Hide overflow if necessary */
+}
+
+/* Move across the page with the bird animation */
+.bird-move-animation {
+  position: absolute;
+  left: -150px; /* Start from outside the screen */
+  bottom: 20px; /* Adjust as needed */
+  width: 150px;
+  height: 150px;
+  animation: moveAcross 13s linear infinite; /* Animation duration and type */
+}
+
+/* Keyframes for moving the bird */
+@keyframes moveAcross {
+  0% {
+    transform: translateX(0); /* Start at the left */
+  }
+  100% {
+    transform: translateX(100vw); /* Move to the right edge of the screen */
+  }
+}
+
+/* Shifted the position of restart button a little down compared to explore button */
+.restart {
+  margin-bottom: 15px; /* Adjust the value as needed */
+}
+
+/* Feedback Message Styling */
+.feedback-message {
+  opacity: 1; /* Start fully visible */
+  transform: scale(1); /* Default size */
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: rgb(29, 12, 12);
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-top: 2px;
+  margin: 0;
+  display: inline-block;
+  animation: pulse 1.5s ease-in-out infinite; /* Infinite pulse animation */
+}
+
+/* Keyframes for pulse effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.05); /* Slightly larger */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
+}
+/* Score Summary Container */
+.score-summary-container {
+  background-color: #f3f4f8; /* Light background for the score section */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Spacing around the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+  max-width: 600px; /* Set a max width */
+  width: 100%; /* Ensure full width on smaller screens */
+  margin: 30px auto; /* Center the container on the page */
+  text-align: center; /* Center the text */
+}
+
+/* Responsive typography */
+@media (max-width: 600px) {
+  .score-summary-container h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .score-summary-container p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Styling for headers and paragraphs inside the score container */
+.score-summary-container h2 {
+  font-size: 1.8rem; /* Larger font for the heading */
+  color: #333; /* Dark text color */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.score-summary-container p {
+  font-size: 1.2rem; /* Slightly larger font for the paragraphs */
+  color: #555; /* A bit lighter text color */
+  margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.score-summary-container span {
+  font-weight: bold; /* Make the score text bold */
+  color: #0c80ef; /* Highlight the score in blue */
+}
+
+/* Cumulative Score */
+.score-summary-container .cumulative-score {
+  color: #388e3c; /* Slightly darker green for contrast */
+}
+.score-summary-container .final-score {
+  color: #4caf50; /* Green color for final score */
+}
+.score-summary-container .total-score {
+  color: #4caf50; /* Green color for total score */
+}
+
+/* Hover effect for the Restart button */
+.btn-hover-restart {
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn-hover-restart:hover {
+  background: linear-gradient(
+    to top,
+    rgba(2, 0, 36, 0.5),
+    rgba(0, 212, 255, 0.7)
+  );
+  box-shadow: 0 5px 15px rgba(121, 9, 38, 0.4);
+  transform: translateX(10px); /* Swipe effect (moves right) */
+  color: #fff; /* Change text color to white on hover */
+}
+
+/* Hover effect for the Explore button */
+.btn-hover-explore {
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn-hover-explore:hover {
+  background: linear-gradient(
+    to top,
+    rgba(2, 0, 36, 0.5),
+    rgba(0, 212, 255, 0.7)
+  );
+  box-shadow: 0 5px 15px rgba(121, 9, 38, 0.4);
+  transform: translateX(-10px); /* Swipe effect (moves left) */
+  color: #fff; /* Change text color to white on hover */
+}

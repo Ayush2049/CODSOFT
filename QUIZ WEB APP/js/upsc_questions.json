@@ -1,0 +1,447 @@
+[
+  {
+    "question": "Which ancient Indian text refers to Chandragupta Maurya's reign?",
+    "correct_answer": "Arthashastra",
+    "incorrect_answers": ["Milinda Panha", "Buddhacharita", "Kalpasutra"]
+  },
+  {
+    "question": "The Milindapanho is a dialogue between Nagasena and which king?",
+    "correct_answer": "Menander",
+    "incorrect_answers": ["Ashoka", "Kanishka", "Rudradaman"]
+  },
+  {
+    "question": "The Hoysala empire's early capital was:",
+    "correct_answer": "Belur",
+    "incorrect_answers": ["Halebidu", "Mysore", "Vijayanagara"]
+  },
+  {
+    "question": "Who authored Nitivakyamrita?",
+    "correct_answer": "Somadeva Suri",
+    "incorrect_answers": ["Vishakhadatta", "Bilhana", "Nagarjuna"]
+  },
+  {
+    "question": "The core Jain belief in souls existing in natural objects is termed:",
+    "correct_answer": "Animism",
+    "incorrect_answers": ["Ahimsa", "Atomism", "Panpsychism"]
+  },
+  {
+    "question": "Which article grants the President the power to declare an emergency?",
+    "correct_answer": "Article 352",
+    "incorrect_answers": ["Article 356", "Article 360", "Article 368"]
+  },
+  {
+    "question": "Which amendment added the Fundamental Duties to the Indian Constitution?",
+    "correct_answer": "42nd",
+    "incorrect_answers": ["44th", "52nd", "86th"]
+  },
+  {
+    "question": "A 'Money Bill' is defined under which article?",
+    "correct_answer": "Article 110",
+    "incorrect_answers": ["Article 112", "Article 117", "Article 122"]
+  },
+  {
+    "question": "The Chief Election Commissioner of India holds office for:",
+    "correct_answer": "6 years or age 65, whichever is earlier",
+    "incorrect_answers": [
+      "5 years or age 65, whichever is earlier",
+      "6 years or age 62, whichever is earlier",
+      "5 years or age 62, whichever is earlier"
+    ]
+  },
+  {
+    "question": "Which constitutional body decides disputes regarding MPs' disqualification under the anti-defection law?",
+    "correct_answer": "Speaker",
+    "incorrect_answers": ["Election Commission", "President", "Supreme Court"]
+  },
+  {
+    "question": "Which of the following is not a component of the capital account?",
+    "correct_answer": "Remittances",
+    "incorrect_answers": [
+      "Foreign Direct Investment",
+      "External Commercial Borrowing",
+      "Portfolio Investment"
+    ]
+  },
+  {
+    "question": "The term 'Stagflation' refers to:",
+    "correct_answer": "High inflation with high unemployment",
+    "incorrect_answers": [
+      "High inflation with low unemployment",
+      "High inflation and high growth",
+      "Low inflation with stagnation"
+    ]
+  },
+  {
+    "question": "The Gini coefficient measures:",
+    "correct_answer": "Income inequality",
+    "incorrect_answers": [
+      "Economic growth",
+      "Inflation",
+      "Purchasing power parity"
+    ]
+  },
+  {
+    "question": "What is 'Operation Greens' associated with?",
+    "correct_answer": "Fruit and vegetable price stabilization",
+    "incorrect_answers": [
+      "Grains export promotion",
+      "Sustainable forestry",
+      "Urban gardening"
+    ]
+  },
+  {
+    "question": "The term 'CBDC' recently in news refers to:",
+    "correct_answer": "Central Bank Digital Currency",
+    "incorrect_answers": [
+      "Carbon Bank Derivative Compensation",
+      "Collective Banking Depository Corporation",
+      "Cryptocurrency Bond Development Centre"
+    ]
+  },
+  {
+    "question": "Which ancient civilization was centered in the region of the Indus River?",
+    "correct_answer": "Harappan",
+    "incorrect_answers": ["Mesopotamian", "Egyptian", "Chinese"]
+  },
+  {
+    "question": "The 'Battle of Plassey' was fought in which year?",
+    "correct_answer": "1757",
+    "incorrect_answers": ["1764", "1773", "1784"]
+  },
+  {
+    "question": "Who is considered the founder of the Gupta Empire?",
+    "correct_answer": "Chandragupta I",
+    "incorrect_answers": ["Samudragupta", "Chandragupta II", "Skandagupta"]
+  },
+  {
+    "question": "Who was the first Mughal emperor of India?",
+    "correct_answer": "Babur",
+    "incorrect_answers": ["Akbar", "Humayun", "Aurangzeb"]
+  },
+  {
+    "question": "The first Buddhist Council was held at:",
+    "correct_answer": "Rajgir",
+    "incorrect_answers": ["Kashmir", "Vaishali", "Pataliputra"]
+  },
+  {
+    "question": "Who wrote the book 'India Wins Freedom'?",
+    "correct_answer": "Maulana Abul Kalam Azad",
+    "incorrect_answers": [
+      "Jawaharlal Nehru",
+      "Sardar Patel",
+      "Subhas Chandra Bose"
+    ]
+  },
+  {
+    "question": "The Quit India Movement was launched in which year?",
+    "correct_answer": "1942",
+    "incorrect_answers": ["1940", "1941", "1943"]
+  },
+  {
+    "question": "The Simon Commission was boycotted in India because:",
+    "correct_answer": "It did not include any Indian members",
+    "incorrect_answers": [
+      "It proposed separate electorates",
+      "It was set up without Indian consultation",
+      "It recommended dominion status"
+    ]
+  },
+  {
+    "question": "Who among the following was the Viceroy during the partition of Bengal (1905)?",
+    "correct_answer": "Lord Curzon",
+    "incorrect_answers": ["Lord Minto", "Lord Ripon", "Lord Hardinge"]
+  },
+  {
+    "question": "The doctrine of 'Subsidiary Alliance' was introduced by:",
+    "correct_answer": "Lord Wellesley",
+    "incorrect_answers": ["Lord Hastings", "Lord Dalhousie", "Lord Cornwallis"]
+  },
+  {
+    "question": "Who is known as the 'Father of the Indian Constitution'?",
+    "correct_answer": "Dr. B.R. Ambedkar",
+    "incorrect_answers": ["Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Patel"]
+  },
+  {
+    "question": "The Chipko Movement is associated with:",
+    "correct_answer": "Forest conservation",
+    "incorrect_answers": [
+      "River cleaning",
+      "Wildlife protection",
+      "Renewable energy"
+    ]
+  },
+  {
+    "question": "The 'Green Revolution' in India was initiated during the tenure of which Prime Minister?",
+    "correct_answer": "Indira Gandhi",
+    "incorrect_answers": [
+      "Jawaharlal Nehru",
+      "Lal Bahadur Shastri",
+      "Rajiv Gandhi"
+    ]
+  },
+  {
+    "question": "The term 'Operation Flood' is associated with:",
+    "correct_answer": "Dairy production",
+    "incorrect_answers": [
+      "Grain production",
+      "Irrigation projects",
+      "Animal husbandry"
+    ]
+  },
+  {
+    "question": "The Kalinga War was fought in which year?",
+    "correct_answer": "261 BCE",
+    "incorrect_answers": ["268 BCE", "250 BCE", "273 BCE"]
+  },
+  {
+    "question": "Which dynasty built the Brihadeeswarar Temple in Tamil Nadu?",
+    "correct_answer": "Chola",
+    "incorrect_answers": ["Pallava", "Pandya", "Chera"]
+  },
+  {
+    "question": "The term 'Dyarchy' in Indian governance was introduced by which act?",
+    "correct_answer": "Government of India Act, 1919",
+    "incorrect_answers": [
+      "Indian Councils Act, 1909",
+      "Government of India Act, 1935",
+      "Indian Independence Act, 1947"
+    ]
+  },
+  {
+    "question": "The Treaty of Seringapatam ended which war?",
+    "correct_answer": "Third Anglo-Mysore War",
+    "incorrect_answers": [
+      "First Anglo-Mysore War",
+      "Second Anglo-Mysore War",
+      "Fourth Anglo-Mysore War"
+    ]
+  },
+  {
+    "question": "The capital of the Satavahana Empire was:",
+    "correct_answer": "Pratishthana",
+    "incorrect_answers": ["Ujjain", "Taxila", "Kanchi"]
+  },
+  {
+    "question": "The Ashokan edicts are primarily inscribed on:",
+    "correct_answer": "Rocks and pillars",
+    "incorrect_answers": ["Temples", "Copper plates", "Palm leaves"]
+  },
+  {
+    "question": "Who established the city of Fatehpur Sikri?",
+    "correct_answer": "Akbar",
+    "incorrect_answers": ["Shah Jahan", "Babur", "Jahangir"]
+  },
+  {
+    "question": "Which Indian ruler is associated with the construction of the Qutub Minar?",
+    "correct_answer": "Qutb-ud-din Aibak",
+    "incorrect_answers": ["Iltutmish", "Alauddin Khilji", "Firoz Shah Tughlaq"]
+  },
+  {
+    "question": "The Poona Pact of 1932 was an agreement between:",
+    "correct_answer": "Mahatma Gandhi and B.R. Ambedkar",
+    "incorrect_answers": [
+      "Jawaharlal Nehru and Subhas Chandra Bose",
+      "Mahatma Gandhi and Muhammad Ali Jinnah",
+      "B.R. Ambedkar and Jawaharlal Nehru"
+    ]
+  },
+  {
+    "question": "The Battle of Buxar was fought in which year?",
+    "correct_answer": "1764",
+    "incorrect_answers": ["1757", "1773", "1780"]
+  },
+  {
+    "question": "Who was the first woman to become the Governor of an Indian state?",
+    "correct_answer": "Sarojini Naidu",
+    "incorrect_answers": [
+      "Indira Gandhi",
+      "Sucheta Kripalani",
+      "Vijaya Lakshmi Pandit"
+    ]
+  },
+  {
+    "question": "The Regulating Act of 1773 was aimed at:",
+    "correct_answer": "Controlling the East India Company",
+    "incorrect_answers": [
+      "Granting dominion status to India",
+      "Establishing federal governance",
+      "Introducing bicameralism"
+    ]
+  },
+  {
+    "question": "Who wrote the book 'Discovery of India'?",
+    "correct_answer": "Jawaharlal Nehru",
+    "incorrect_answers": [
+      "Mahatma Gandhi",
+      "Rabindranath Tagore",
+      "Sardar Patel"
+    ]
+  },
+  {
+    "question": "The Vernacular Press Act of 1878 was passed during the tenure of:",
+    "correct_answer": "Lord Lytton",
+    "incorrect_answers": ["Lord Ripon", "Lord Curzon", "Lord Hastings"]
+  },
+  {
+    "question": "The Swadeshi Movement was launched to oppose which act?",
+    "correct_answer": "Partition of Bengal",
+    "incorrect_answers": [
+      "Rowlatt Act",
+      "Pitt's India Act",
+      "Indian Councils Act"
+    ]
+  },
+  {
+    "question": "Who was the first Indian to receive a Nobel Prize?",
+    "correct_answer": "Rabindranath Tagore",
+    "incorrect_answers": ["C.V. Raman", "Mother Teresa", "Amartya Sen"]
+  },
+  {
+    "question": "The first session of the Indian National Congress was held in:",
+    "correct_answer": "Bombay",
+    "incorrect_answers": ["Calcutta", "Madras", "Delhi"]
+  },
+  {
+    "question": "Who was the first Governor-General of independent India?",
+    "correct_answer": "Lord Mountbatten",
+    "incorrect_answers": [
+      "C. Rajagopalachari",
+      "Warren Hastings",
+      "Lord Wavell"
+    ]
+  },
+  {
+    "question": "The Kakori Conspiracy of 1925 was associated with:",
+    "correct_answer": "Indian freedom fighters robbing a train",
+    "incorrect_answers": [
+      "Partition of Bengal",
+      "Salt Satyagraha",
+      "Civil Disobedience Movement"
+    ]
+  },
+  {
+    "question": "Who is considered the 'Father of Indian Renaissance'?",
+    "correct_answer": "Raja Ram Mohan Roy",
+    "incorrect_answers": [
+      "Mahatma Gandhi",
+      "Swami Vivekananda",
+      "Dadabhai Naoroji"
+    ]
+  },
+  {
+    "question": "The Quit India Movement was launched in which year?",
+    "correct_answer": "1942",
+    "incorrect_answers": ["1930", "1945", "1935"]
+  },
+  {
+    "question": "The policy of 'Doctrine of Lapse' was introduced by:",
+    "correct_answer": "Lord Dalhousie",
+    "incorrect_answers": ["Lord Wellesley", "Lord Canning", "Lord Ripon"]
+  },
+  {
+    "question": "Who presided over the Lahore session of the Indian National Congress in 1929?",
+    "correct_answer": "Jawaharlal Nehru",
+    "incorrect_answers": [
+      "Mahatma Gandhi",
+      "Subhas Chandra Bose",
+      "Bal Gangadhar Tilak"
+    ]
+  },
+  {
+    "question": "The capital city of the Vijayanagara Empire was:",
+    "correct_answer": "Hampi",
+    "incorrect_answers": ["Mysore", "Belur", "Madurai"]
+  },
+  {
+    "question": "Which Mughal emperor built the Red Fort in Delhi?",
+    "correct_answer": "Shah Jahan",
+    "incorrect_answers": ["Akbar", "Babur", "Aurangzeb"]
+  },
+  {
+    "question": "The first battle of Panipat was fought between:",
+    "correct_answer": "Babur and Ibrahim Lodi",
+    "incorrect_answers": [
+      "Akbar and Hemu",
+      "Sher Shah and Humayun",
+      "Marathas and Ahmad Shah Abdali"
+    ]
+  },
+  {
+    "question": "The title 'Sardar' was given to Vallabhbhai Patel after:",
+    "correct_answer": "Bardoli Satyagraha",
+    "incorrect_answers": ["Salt Satyagraha", "Kheda Movement", "Dandi March"]
+  },
+  {
+    "question": "The Jallianwala Bagh massacre occurred in which year?",
+    "correct_answer": "1919",
+    "incorrect_answers": ["1920", "1930", "1915"]
+  },
+  {
+    "question": "The title 'Mahamana' was given to which Indian leader?",
+    "correct_answer": "Madan Mohan Malaviya",
+    "incorrect_answers": [
+      "Bal Gangadhar Tilak",
+      "Dadabhai Naoroji",
+      "Gopal Krishna Gokhale"
+    ]
+  },
+  {
+    "question": "The book 'Hind Swaraj' was authored by:",
+    "correct_answer": "Mahatma Gandhi",
+    "incorrect_answers": [
+      "Jawaharlal Nehru",
+      "Rabindranath Tagore",
+      "Dadabhai Naoroji"
+    ]
+  },
+  {
+    "question": "The 'Simon Commission' was boycotted because:",
+    "correct_answer": "It had no Indian members",
+    "incorrect_answers": [
+      "It proposed partition",
+      "It was formed without Gandhi's consent",
+      "It demanded dominion status"
+    ]
+  },
+  {
+    "question": "The 'Dandi March' was a part of which movement?",
+    "correct_answer": "Civil Disobedience Movement",
+    "incorrect_answers": [
+      "Non-Cooperation Movement",
+      "Quit India Movement",
+      "Khilafat Movement"
+    ]
+  },
+  {
+    "question": "Who wrote the famous book 'India Wins Freedom'?",
+    "correct_answer": "Maulana Abul Kalam Azad",
+    "incorrect_answers": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Subhas Chandra Bose"
+    ]
+  },
+  {
+    "question": "The Battle of Plassey was fought in which year?",
+    "correct_answer": "1757",
+    "incorrect_answers": ["1764", "1857", "1784"]
+  },
+  {
+    "question": "Who founded the 'Brahmo Samaj'?",
+    "correct_answer": "Raja Ram Mohan Roy",
+    "incorrect_answers": [
+      "Swami Vivekananda",
+      "Dayanand Saraswati",
+      "Ishwar Chandra Vidyasagar"
+    ]
+  },
+  {
+    "question": "The Khilafat Movement was started in response to:",
+    "correct_answer": "Disintegration of the Ottoman Empire",
+    "incorrect_answers": [
+      "Partition of Bengal",
+      "Rowlatt Act",
+      "Jallianwala Bagh Massacre"
+    ]
+  }
+]

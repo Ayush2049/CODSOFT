@@ -1,0 +1,88 @@
+/* Add a 3D background to the body */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full-page height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover; /* Ensure the image covers the entire background */
+  font-family: "Arial", sans-serif;
+}
+
+/* Style for the container holding buttons */
+.content-box {
+  background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add depth */
+  text-align: center;
+  width: 300px; /* Fixed width for centering */
+}
+
+/* Heading inside the content box */
+.content-box h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Common styles for both buttons */
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Login button */
+#login-btn {
+  background-color: #28a745; /* Green background */
+  color: white;
+}
+
+#login-btn i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+#login-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+#login-btn:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+/* Logout button */
+#logout-btn {
+  background-color: #dc3545; /* Red background */
+  color: white;
+}
+
+#logout-btn i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+#logout-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+#logout-btn:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  button {
+    width: 100%; /* Full width on smaller screens */
+    padding: 12px 10px;
+  }
+}

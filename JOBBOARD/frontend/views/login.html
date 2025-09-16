@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="../css/loginstyles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="userType"><ion-icon name="people-sharp"></ion-icon> I am a:</label>
+          <select id="userType" class="form-control">
+            <option value="user">Job Seeker</option>
+            <option value="company">Employer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email"><ion-icon name="mail-unread-sharp"></ion-icon> Email</label>
+          <input type="email" id="email" required />
+          <div id="emailError" class="error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="password"><ion-icon name="lock-open"></ion-icon> Password</label>
+          <input type="password" id="password" required />
+          <div id="passwordError" class="error"></div>
+        </div>
+
+        <button type="submit">Login</button>
+        <p>
+          Don't have an account? <a href="./register.html">Register here</a>
+        </p>
+      </form>
+    </div>
+
+    <script type="module" src="../js/login.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>

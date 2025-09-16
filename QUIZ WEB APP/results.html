@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+    <title>Quiz Mania - Results</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="end-screen">
+        <h1 class="heading3">QUIZ RESULTS</h1>
+
+        <!-- Main container for Lottie Animation -->
+        <div id="resultAnimationWrapper">
+          <div id="resultAnimation" style="width: 150px; height: 150px"></div>
+        </div>
+
+        <div class="score">
+          <span class="score-text">Your Score:</span>
+          <div>
+            <span class="final-score"></span>
+          </div>
+          <!-- Feedback message directly under the score -->
+          <div class="feedback-message" id="feedbackMessage"></div>
+        </div>
+
+        <div class="score-summary-container">
+          <h2>Congratulations, <span class="user-name"></span>!</h2>
+          <p>Your score this round: <span class="final-score"></span></p>
+          <!-- Shows final score / total questions -->
+          <p>Your cumulative score: <span class="cumulative-score"></span></p>
+          <!-- Cumulative score -->
+          <p>Total questions this round: <span class="total-score"></span></p>
+          <!-- Total questions -->
+        </div>
+
+        <button
+          class="btn restart btn-hover-restart"
+          onclick="window.location.href='quiz.html'"
+        >
+          Restart quiz
+        </button>
+        <button
+          class="btn explore btn-hover-explore"
+          onclick="window.location.href='index.html'"
+        >
+          Explore More Quizzes
+        </button>
+      </div>
+
+      <div class="leaderboard-container">
+        <h2>Leaderboard</h2>
+        <div id="leaderboard"></div>
+      </div>
+
+      <div class="additional-content">
+        <h2>Why Choose Our Quiz Website?</h2>
+        <p>
+          Our Quiz App offers a wide range of categories and difficulty levels
+          to test your knowledge and improve your skills.
+        </p>
+        <h3>Features:</h3>
+        <ul>
+          <li>Multiple Categories</li>
+          <li>Customizable Difficulty</li>
+          <li>Timed Questions</li>
+          <li>Instant Feedback</li>
+          <li>Track Your Progress</li>
+        </ul>
+        <h3>Stay Connected:</h3>
+        <p>Follow us on social media for the latest updates and new quizzes!</p>
+        <div class="social-media">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-2x" style="color: #3b5998"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-2x" style="color: #00acee"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-2x" style="color: #c13584"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin fa-2x" style="color: #0e76a8"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="js/leaderboard.js"></script>
+    <script src="js/results.js"></script>
+  </body>
+</html>
